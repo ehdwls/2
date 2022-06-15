@@ -12,7 +12,7 @@
             #margin{margin: 0px 500px; border-left:1px solid; border-right: 1px solid; padding-left: 20px; padding-right: 20px;}
             del{color:darkgray}
             .yb{margin-left: 88px;}
-            html{background-color:darksalmon;}
+            html{background-color:rgba(230, 227, 227, 0.822);}
             body{background-color: white;}
         </style>
     </head>
@@ -83,7 +83,30 @@
         <p><li><strong>2022.06.09</strong> 김보근 "호우~" 시전.</li>    
         </ul>
         </ol>
-        <input type="button" value="딸" onctck="alert('근')">
-        <script></script>
+
+        <input type="button" value="보근이를 때리고 싶은 만큼 눌러주세요" onclick="countUp()">
+        <strong id="count">0</strong>
+
+        <script>  
+        var count= 0;
+
+        var countUp=function(){
+            count++;
+            document.querySelector("#count").innerText=count;
+        };
+         </script>
+        
+<div id="disqus_thread"></div>
+<script>
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-ogahh2mwvt.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
     </body>
 </html>
