@@ -4,8 +4,15 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script>
-            function nightmode(){
-            
+            function nightmode(self){
+                var target = document.querySelector('body');
+                var target1 = document.querySelector('html');
+            if(self.value === '야간모드'){
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = '주간모드';
+                target1.style.backgroundColor = 'black'
+            }
             }
             </script>
 
@@ -13,7 +20,7 @@
 
     <body id="margin">
         <h1 id="title">보무위키</h1>
-        <input id="night" type="button" value="야간모드" onclick="">
+        <input id="night" type="button" value="야간모드" onclick="nightmode(this)">
         <table border="1"; bordercolor="gray">
             <tr class="bg"><th colspan="2">김보근<br>金保根 | Kim Bo-Geun<a title="한국식 로마자 표기법에 익숙하지 않은 외국인들은 eu를 'ㅠ' 내지는 'ᆜ' 발음으로 인식하고 '보긘 킴' 혹은 '보균 킴' 등으로 발음하는 경우가 많다. 아무래도 eu라는 낯선 모음에서 'Europe'이 연상돼서인 듯하다. 종종 독일어 철자법으로 그대로 읽을 시에는 보그잉 킴이라고 하기도 한다.">[1]</a></th></tr>
 
